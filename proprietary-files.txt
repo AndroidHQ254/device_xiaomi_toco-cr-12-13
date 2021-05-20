@@ -348,3 +348,6 @@ vendor/lib64/libthermalclient.so
 
 # Vibrator firmware
 vendor/firmware/drv2604.bin
+
+# WLAN
+vendor/bin/cnss-daemon
