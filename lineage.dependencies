@@ -21,5 +21,11 @@
         "repository":   "LineageOS/android_hardware_xiaomi",
         "target_path":  "hardware/xiaomi",
         "revision":     "lineage-18.1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "AndroidHQ254/vendor_xiaomi_google",
+        "target_path":  "vendor/xiaomi/google",
+        "revision":     "r11.0"
     }
 ]
