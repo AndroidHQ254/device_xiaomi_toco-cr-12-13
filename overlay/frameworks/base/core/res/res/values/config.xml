@@ -255,10 +255,7 @@
     <!-- Whether the device has fingeprint sensor or not -->
     <bool name="config_hasFingerprintSensor">true</bool>
 
-    <!-- Show a custom view for FOD -->
-    <bool name="config_needCustomFODView">true</bool>
-
-     <!-- Screen off FOD -->
+    <!-- Screen off FOD -->
     <bool name="config_supportScreenOffFod">true</bool>
 
     <!-- Whether device supports in-display fingerprint when screen is turned off -->
