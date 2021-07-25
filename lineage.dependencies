@@ -12,6 +12,7 @@
         "branch":       "hw"
     },
     {
+        "remote":       "github",
         "repository":   "AndroidHQ254/device_xiaomi_sm6150-common-cr",
         "target_path":  "device/xiaomi/sm6150-common",
         "branch":       "cr"
@@ -20,7 +21,7 @@
         "remote":       "github",
         "repository":   "LineageOS/android_hardware_xiaomi",
         "target_path":  "hardware/xiaomi",
-        "revision":     "lineage-18.1"
+        "branch":       "lineage-18.1"
     },
     {
         "remote":       "github",
