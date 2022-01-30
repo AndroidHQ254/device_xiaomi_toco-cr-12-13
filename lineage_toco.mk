@@ -16,6 +16,8 @@ $(call inherit-product, device/xiaomi/toco/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 PRODUCT_NAME := lineage_toco
 PRODUCT_DEVICE := toco
 PRODUCT_BRAND := Xiaomi
