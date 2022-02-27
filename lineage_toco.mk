@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/toco/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_NAME := lineage_toco
 PRODUCT_DEVICE := toco
 PRODUCT_BRAND := Xiaomi
