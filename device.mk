@@ -94,10 +94,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.filecache_min_kb=153600 \
     ro.lmk.stall_limit_critical=40
 
-# Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
