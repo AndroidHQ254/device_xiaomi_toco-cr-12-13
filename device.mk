@@ -58,11 +58,6 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm6150-udfps \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
-
 # FOD
 PRODUCT_PACKAGES += \
     FodAnimationResources
