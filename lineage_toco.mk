@@ -43,6 +43,10 @@ TARGET_SUPPORTS_QUICK_TAP := true
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# GMS build flags
+WITH_GMS := true
+TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+
 # Device flag
 RICE_DEVICE := toco
 
