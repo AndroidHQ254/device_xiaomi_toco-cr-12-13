@@ -52,10 +52,6 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
-# FOD
-PRODUCT_PACKAGES += \
-    FodAnimationResources
-
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
