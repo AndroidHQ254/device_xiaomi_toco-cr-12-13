@@ -47,6 +47,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GMS := true
 TARGET_OPTOUT_GOOGLE_TELEPHONY := true
 
+# Allow usage of custom binary linker (LD), default is false
+TARGET_KERNEL_OPTIONAL_LD := true
+
 # Device flag
 RICE_DEVICE := toco
 
