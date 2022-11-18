@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/toco/device.mk)
 # Inherit some common RiceDroid stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/toco-miuicamera/products/miuicamera.mk)
+
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # Maintainer
