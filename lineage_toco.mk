@@ -48,7 +48,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # GMS build flags
 WITH_GMS := true
-TARGET_OPTOUT_GOOGLE_TELEPHONY := true
+TARGET_OPTOUT_GOOGLE_TELEPHONY := false
 
 # Allow usage of custom binary linker (LD), default is false
 TARGET_KERNEL_OPTIONAL_LD := true
