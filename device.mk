@@ -19,6 +19,9 @@ $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/toco-miuicamera/products/miuicamera.mk)
 
+# GApps
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 29
 
