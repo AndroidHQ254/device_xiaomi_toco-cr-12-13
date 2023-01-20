@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/toco/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Don't build AudioFx
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
