@@ -53,6 +53,9 @@ TARGET_USE_GOOGLE_TELEPHONY := true
 # Allow usage of custom binary linker (LD), default is false
 TARGET_KERNEL_OPTIONAL_LD := true
 
+# Don't build AudioFx
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Device flag
 RICE_DEVICE := toco
 
