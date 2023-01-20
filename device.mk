@@ -50,6 +50,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/sdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sdr_config.cfg \
     $(LOCAL_PATH)/configs/display/init.panel_info.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.panel_info.sh
 
+# Don't build AudioFx
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Enable backpressure for GL comp
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_gl_backpressure=1
