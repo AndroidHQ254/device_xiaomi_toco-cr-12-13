@@ -59,6 +59,9 @@ TARGET_EXCLUDES_AUDIOFX := true
 # Enable MIUI camera mode support
 TARGET_USES_MIUI_CAMERA := true
 
+# Overriding camera id
+TARGET_USES_DEPTHSENSOR_OVERRIDE := false
+
 # Device flag
 RICE_DEVICE := toco
 
