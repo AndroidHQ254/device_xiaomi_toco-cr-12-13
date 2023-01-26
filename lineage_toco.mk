@@ -56,6 +56,9 @@ TARGET_KERNEL_OPTIONAL_LD := true
 # Don't build AudioFx
 TARGET_EXCLUDES_AUDIOFX := true
 
+# Enable MIUI camera mode support
+TARGET_USES_MIUI_CAMERA := true
+
 # Device flag
 RICE_DEVICE := toco
 
