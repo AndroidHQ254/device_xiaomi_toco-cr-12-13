@@ -77,4 +77,7 @@
 
     <!-- Enable face auth only when swiping security view -->
     <bool name="config_faceAuthOnlyOnSecurityView">false</bool>
+
+    <!-- Whether device has turbo power charging support -->
+    <bool name="config_hasTurboPowerCharger">true</bool>
 </resources>
