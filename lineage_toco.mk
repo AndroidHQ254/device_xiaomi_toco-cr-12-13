@@ -62,6 +62,9 @@ TARGET_USES_MIUI_CAMERA := true
 # Overriding camera id
 TARGET_USES_DEPTHSENSOR_OVERRIDE := false
 
+# NGA
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
 # Device flag
 RICE_DEVICE := toco
 
