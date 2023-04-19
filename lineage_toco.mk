@@ -11,28 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from toco device
 $(call inherit-product, device/xiaomi/toco/device.mk)
 
-# Inherit some common RiceDroid stuff.
+# Inherit some common RisingOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/toco-miuicamera/products/miuicamera.mk)
 
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-
 # Maintainer
-RICE_MAINTAINER := DennisMurimi
+RISING_MAINTAINER := DennisMurimi
 
 # Chipset
-RICE_CHIPSET := SDM730G
+RISING_CHIPSET := SDM730G
 
 # GApps
 WITH_GMS := true
-
-# Sushi Bootanimation
-SUSHI_BOOTANIMATION := 1080
-
-# Graphene Camera
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
 
 # Blur support
 TARGET_ENABLE_BLUR := true
@@ -48,25 +40,16 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # GMS build flags
 WITH_GMS := true
-TARGET_USE_GOOGLE_TELEPHONY := true
-
-# Allow usage of custom binary linker (LD), default is false
-TARGET_KERNEL_OPTIONAL_LD := true
+TARGET_USE_GOOGLE_TELEPHONY := false
 
 # Don't build AudioFx
 TARGET_EXCLUDES_AUDIOFX := true
 
-# Enable MIUI camera mode support
-TARGET_USES_MIUI_CAMERA := true
-
-# Overriding camera id
-TARGET_USES_DEPTHSENSOR_OVERRIDE := false
+# Aperture Camera
+TARGET_BUILD_APERTURE_CAMERA := true
 
 # NGA
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-
-# Device flag
-RICE_DEVICE := toco
 
 PRODUCT_NAME := lineage_toco
 PRODUCT_DEVICE := toco
