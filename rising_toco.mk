@@ -12,16 +12,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/toco/device.mk)
 
 # Inherit some common RisingOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/rising/config/rising.mk)
 
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/toco-miuicamera/products/miuicamera.mk)
 
-# Maintainer
-RISING_MAINTAINER := DennisMurimi
+# Battery
+RISING_BATTERY := 5260mAh
 
 # Chipset
 RISING_CHIPSET := SDM730G
+
+# Display
+RISING_DISPLAY := 1080×2340
+
+# Maintainer
+RISING_MAINTAINER := DennisMurimi
+
+# RAM
+RISING_RAM := 6GB
+
+# Storage
+RISING_STORAGE := 128GB
 
 # GApps
 WITH_GMS := true
@@ -40,7 +52,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # GMS build flags
 WITH_GMS := true
-TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Don't build AudioFx
 TARGET_EXCLUDES_AUDIOFX := true
@@ -51,7 +63,13 @@ TARGET_BUILD_APERTURE_CAMERA := true
 # NGA
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
-PRODUCT_NAME := lineage_toco
+# Ship pixel features (adaptivecharging, dreamliner etc)
+TARGET_ENABLE_PIXEL_FEATURES := true
+
+# Enable kernel inline building
+INLINE_KERNEL_BUILDING := true
+
+PRODUCT_NAME := rising_toco
 PRODUCT_DEVICE := toco
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi Note 10 Lite
